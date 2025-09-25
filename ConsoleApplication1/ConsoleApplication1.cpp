@@ -111,25 +111,26 @@ int main()
 
     int n;
 	cin >> n;
-	int ost;
+	int ost,t;
 	int a0 = 0, a1 = 0, a2 = 0, a3 = 0, a4 = 0, a5 = 0, a6 = 0, a7 = 0, a8 = 0, a9 = 0;
 	for (int i = 0;i <= n;i++) {
-		while (i != 0) {
-			ost = i % 10;
-			i = i / 10;
+		t = i;
+		while (t != 0) {
+			ost = t % 10;
+			t = t / 10;
 			if (ost == 0) a0++;
-			if (ost == 1) a1++;
-			if (ost == 2) a2++;
-			if (ost == 3) a3++;
-			if (ost == 4) a4++;
-			if (ost == 5) a5++;
-			if (ost == 0) a0++;
-			if (ost == 0) a0++;
-			if (ost == 0) a0++;
-			if (ost == 0) a0++;
+			else if (ost == 1) a1++;
+			else if (ost == 2) a2++;
+			else if (ost == 3) a3++;
+			else if (ost == 4) a4++;
+			else if (ost == 5) a5++;
+			else if (ost == 6) a6++;
+			else if (ost == 7) a7++;
+			else if (ost == 8) a8++;
+			else if (ost == 9) a9++;
 		}
 	}
-	cout << a0;
+	cout << a0 << " " << a1 << " " << a2 << " " << a3 << " " << a4 << " " << a5 << " " << a6 << " " << a7 << " " << a8 << " " << a9 << " ";
 	return 0;
 }
 
